@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Tailwind Mini Project</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="w-full h-14 text-orange-500  flex justify-between px-6 md:px-4 items-center fixed  backdrop-blur-xl">
+        <div class="text-2xl font-bold "><a href="./index.html">Alvish</a></div>
+        <ul class="md:flex hidden font-bold md:text-2xl">
+            <li class="mx-[15px] cursor-pointer text-orange-500 hover:underline  hover:underline-offset-2"><a
+                    href="#home">Home</a></li>
+            <li class="mx-[15px] cursor-pointer text-orange-500 hover:underline  hover:underline-offset-2"><a
+                    href="#account">Social Account</a></li>
+            <li class="mx-[15px] cursor-pointer text-orange-500 hover:underline  hover:underline-offset-2"><a
+                    href="#team">Team</a></li>
+        </ul>
+        <div
+            class="hidden md:block px-2 py-1 bg-orange-500 text-white rounded-xl font-bold cursor-pointer md:text-base">
+            <a href="mailto:abaig7921@gmail.com">Email</a>
+        </div>
+        <div class="md:hidden text-orange-500">
+            <a class="text-5xl" href="#">&#8801;</a>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Section Start -->
+    <header id="home" class="w-full h-auto">
+        <img class="w-full hidden md:block bg-cover h-screen"
+            src="https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="">
+        <img class="w-full md:hidden"
+            src="https://images.pexels.com/photos/2740954/pexels-photo-2740954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="">
+    </header>
+    <!-- Hero Section End -->
+
+    <!-- Cards Section Start -->
+    <div id="account" class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10  bg-yellow-200">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center my-5">
+            <p class="text-orange-500 font-bold text-2xl md:text-4xl text-center">“Our Social Accounts”</p>
+            <div class="w-36 h-1 border-b-4 border-amber-400 mt-2"></div>
+        </div>
+        <div class="w-full flex flex-wrap justify-evenly mt-10">
+            <div
+                class="w-56 flex flex-col items-center group mb-12 py-5 bg-white hover:bg-amber-600 transition duration-1000 ease h-full rounded-3xl">
+                <img class="h-24 w-24 m-5 group-hover:bg-yellow-100 transition duration-700 ease-in-out rounded-full"
+                    src="./img/github.png" alt="Github">
+                <a class="font-bold mb-5 group-hover:text-yellow-100 transition duration-700 ease-in-out"
+                    href="#" target="_blank" rel="noopener">Github Profile</a>
+                <p class="font-semibold md:hover:font-bold group-hover:text-yellow-100 transition duration-700 ease-in-out">
+                    50+</p>
+                <p
+                    class="font-semibold md:hover:font-bold group-hover:text-yellow-100 transition duration-700 ease-in-out mb-5">
+                    Repositories</p>
+            </div>
+            <div
+                class="w-56 flex flex-col items-center mb-12 py-5 bg-white group hover:bg-amber-600 transition duration-1000 ease h-full rounded-3xl">
+                <img class="h-24 w-24 m-5 group-hover:bg-yellow-100 transition duration-700 ease-in-out rounded-full"
+                    src="./img/linkedln.png" alt="Linkedln">
+                <a class="font-bold mb-5 group-hover:text-yellow-100 transition duration-700 ease-in-out"
+                    href="#" target="_blank" rel="noopener">Linkedin Profile</a>
+                <p class="font-semibold md:hover:font-bold group-hover:text-yellow-100 transition duration-700 ease-in-out">
+                    2100+</p>
+                <p
+                    class="font-semibold md:hover:font-bold group-hover:text-yellow-100 transition duration-700 ease-in-out mb-5">
+                    Followers</p>
+            </div>
+            <div
+                class="w-56 flex flex-col items-center mb-12 py-5 bg-white group hover:bg-amber-600 transition duration-1000 ease h-full rounded-3xl">
+                <img class="h-24 w-24 m-5 group-hover:bg-yellow-100 transition duration-700 ease-in-out rounded-full"
+                    src="./img/leetcode.png" alt="Leetcode">
+                <a class="font-bold mb-5 group-hover:text-yellow-100 transition duration-700 ease-in-out"
+                    href="#" target="_blank" rel="noopener">Leetcode Profile</a>
+                <p class="font-semibold md:hover:font-bold group-hover:text-yellow-100 transition duration-700 ease-in-out">
+                    3,413,000</p>
+                <p
+                    class="font-semibold md:hover:font-bold group-hover:text-yellow-100 transition duration-700 ease-in-out mb-5">
+                    Rank</p>
+            </div>
+        </div>
+    </div>
+    <!-- Cards Section End -->
+
+    <!-- Team Section Start -->
+    <div id="team" class="h-auto w-100 flex flex-wrap flex-col items-center text-center pt-10  bg-yellow-200">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center mt-5">
+            <p class="text-orange-500 font-bold text-2xl md:text-4xl text-center">“Team Members”</p>
+            <div class="w-36 h-1 border-b-4 border-amber-400 mt-2"></div>
+        </div>
+    </div>
+
+    <div class="flex md:flex-wrap flex-col items-center justify-center md:h-screen bg-yellow-200">
+        <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs m-5">
+          <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg?auto=compress&cs=tinysrgb&w=600" alt="product designer">
+          <h1 class="text-lg text-gray-700"> Keval Thumar </h1>
+          <h3 class="text-sm text-gray-400 "> Web Developer </h3>
+          <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <a href="#" target="_blank" rel="noopener"><button type="button" class="bg-amber-500 hover:bg-amber-400 outline outline-offset-2 hover:outline-amber-500 transition duration-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Linkedln</button></a>
+        </div>
+        <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs m-5">
+          <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600" alt="product designer">
+          <h1 class="text-lg text-gray-700"> Alvish Varsani </h1>
+          <h3 class="text-sm text-gray-400 "> Web Dev Trainer </h3>
+          <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <a href="#" target="_blank" rel="noopener"><button type="button" class="bg-amber-500 hover:bg-amber-400 outline outline-offset-2 hover:outline-amber-500 transition duration-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Linkedln</button></a>
+          
+        </div>
+        <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs m-5">
+          <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600" alt="product designer">
+          <h1 class="text-lg text-gray-700">Aman Sangani </h1>
+          <h3 class="text-sm text-gray-400 "> Web Developr </h3>
+          <p class="text-xs text-gray-400 mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <a href="#" target="_blank" rel="noopener"><button type="button" class="bg-amber-500 hover:bg-amber-400 outline outline-offset-2 hover:outline-amber-500 transition duration-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide"> Linkedln </button></a>
+        </div>
+      </div>
+    <!-- Team Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-amber-300 text-orange-800">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col ">
+            <a href="./index.html" class="flex title-font font-bold items-center md:justify-start justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 -960 960 960" width="2.5em"
+                fill="#9a3412">
+                <path
+                    d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+            </svg>
+            <span class="ml-3 text-xl">Alvish</span>
+            </a>
+            <p class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©
+                2024 Tailwind Practice —
+                <a href="www.linkedin.com/in/alvish-varsani" class="ml-1" target="_blank"
+                    rel="noopener noreferrer">@Alvish Varsani </a>
+            </p>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+</body>
+
+</html>
